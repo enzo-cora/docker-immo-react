@@ -1,0 +1,6 @@
+setup:
+  docker volume create nodemodulesimmo
+install:
+  docker-compose -f docker-compose.builder.yml run --rm install
+dev:
+  docker-compose up
